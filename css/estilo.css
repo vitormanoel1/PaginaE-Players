@@ -2,7 +2,7 @@
 
 :root{
 
-    --background: #000000;
+    --black: #000000;
     --red: #C20000;
     --blue: #001F70;
     --gradient:linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
@@ -17,24 +17,73 @@
 }
 
 body{
-    background-color: var(--blue);
-    font-size: 40px;
-    color: var(--red);
+    background: var(--black);
     font-family: var(--font);
+    font-size: 16px;
 }
 
-@media screen and (max-width: 1199px){
+.header-top{
+    width: 100%;
+    height: 5em;
+    /* background: royalblue;  */
+}
+.header-top img{
+    width: 100%;
+    max-width: 21.18em;
+}
+.content{
+    width: 100%;
+    max-width: 75em;
+    height: 100%;
+    margin: auto;
+    /* background-color: rgb(171, 245, 0); */
+}
+.flex-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    width: 100%;
+    max-width: 40em;
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu a{
+    color: white;
+    text-decoration: unset;
+    font-size: 1.em;
+    text-transform: uppercase;
+    padding: 1.9em 1.32em;
+}
+.menu a:hover{
+    text-shadow: 0 0 var(--red);
+    text-decoration: underline;
+}
+#menu-bars{
+    color: white;
+    display: none;
+}
+
+/* até 1199 */
+@media screen and (max-width: 74.93em){
+    
+}
+
+/* até 991 */
+@media screen and (max-width: 61.93em){
 
 }
 
-@media screen and (max-width: 991px){
-
+/* até 767 */
+@media screen and (max-width: 47.93em){
+    #menu-bars{
+    display: block;
+    }
 }
 
-@media screen and (max-width: 767px){
-
-}
-
-@media screen and (max-width: 575px){
+/* até 576 */
+@media screen and (max-width: 36em){
 
 }
