@@ -36,7 +36,7 @@ body{
     max-width: 75em;
     height: 100%;
     margin: auto;
-    /* background-color: rgb(171, 245, 0); */
+    /* background-color: rgb(171, 245, 0);  */
 }
 .flex-1{
     display: flex;
@@ -65,6 +65,68 @@ body{
     color: white;
     display: none;
 }
+.banner{
+    position: relative;
+}
+.banner-container{
+    width: 100%;
+    height: 37.5em;
+    /* background-color: rgba(255, 0, 0, 0.596); */
+    position: absolute;
+    top: 0;
+}
+.banner-content{
+    width: 75em;
+    height: 100%;
+    /* background-color: rgba(255, 255, 255, 0.521);  */
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.banner-text{
+    width: 50%;
+    height: 100%;
+    /* background-color: orchid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.banner-text h1{
+    font-size: 5.62em;
+}
+.banner-text p{
+    font-size:1.87em ;
+}
+.banner-text a{
+    color: white;
+    font-size: 1.87em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: var(--red);
+    padding: 0.5em 1.2em;
+    border-radius: 0.75em;
+    margin-top: 2em;
+}
+.games{
+    width: 100%;
+    height: 7.5em;
+    /* background-color: yellow; */
+}
+.games ul{
+    width: 100%;
+    /* background-color: var(--blue); */
+    list-style-type: none;
+}
+.games img{
+    width: 170px;
+}
+.games ul a:hover img{
+    transition: 0.5s;
+    transform: scale(1.5);
+}
+
 
 /* até 1199 */
 @media screen and (max-width: 74.93em){
