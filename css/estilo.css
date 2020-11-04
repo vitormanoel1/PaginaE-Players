@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
 
 :root{
-
+    --gradient: linear-gradient(180deg, rgba(83, 83, 83, 0.5) 0%, #000000 100%);
     --black: #000000;
     --red: #C20000;
     --blue: #001F70;
-    --gradient:linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
     --font:'Titillium Web', sans-serif;
 }
 
@@ -25,7 +24,7 @@ body{
 .header-top{
     width: 100%;
     height: 5em;
-    /* background: royalblue;  */
+    /* background: royalblue; */
 }
 .header-top img{
     width: 100%;
@@ -41,6 +40,11 @@ body{
 .flex-1{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.flex-2{
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 .menu{
@@ -65,13 +69,18 @@ body{
     color: white;
     display: none;
 }
+/* fim do menu  */
 .banner{
     position: relative;
+}
+.banner img{
+    width: 100%;
+    max-width: 120em;
 }
 .banner-container{
     width: 100%;
     height: 37.5em;
-    /* background-color: rgba(255, 0, 0, 0.596); */
+    /* background-color: rgba(255, 0, 0, 0.596);  */
     position: absolute;
     top: 0;
 }
@@ -109,18 +118,19 @@ body{
     border-radius: 0.75em;
     margin-top: 2em;
 }
+/* fim do banner  */
 .games{
     width: 100%;
     height: 7.5em;
-    /* background-color: yellow; */
+    /* background-color: yellow;  */
 }
 .games ul{
     width: 100%;
-    /* background-color: var(--blue); */
+    /* background-color: var(--blue);  */
     list-style-type: none;
 }
 .games img{
-    width: 170px;
+    width: 10,625em;
 }
 .games ul a:hover img{
     transition: 0.5s;
@@ -151,6 +161,7 @@ body{
 }
 .content-about{
     width: 80%;
+    max-width: 75em;
     margin: auto;
     display: flex;
     align-items: center;
@@ -170,7 +181,115 @@ body{
 .content-about img{
     max-width: 31.875em;
 }
-
+/* fim dos games  */
+.linha{
+    border: solid 1px #ffffff;
+    height: 3em;
+    margin-right: 2em;
+}
+.games-aovivo, .games-embreve{
+width: 100%;
+display: flex;
+color: white;
+align-items: center;
+justify-content: space-between;
+font-size:1.5625em;
+}
+.partida{
+width: 9.5em;
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin: auto;
+}
+.time1, .time2{
+    display: flex;
+    align-items: center;
+}
+.partida img{
+    width: 1.8em;
+}
+.time1{
+    margin-left: 0.5em;
+}
+.time2{
+    margin-right: 0.5em;
+}
+/* fim dos games  */
+.bg-news{
+    width: 100%;
+    height: auto;
+    background: var(--gradient);
+}
+.news{
+    width: 70%;
+    height: 90%;
+    /* background-color: yellowgreen; */
+}
+.news h2{
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 0.2em;
+    font-size: 2.1875em;
+}
+.content-news{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.cardnews{
+    width:14.8125em ;
+    height: 22.75em;
+    background: var(--gradient);
+    color: white;
+    box-shadow: 0px 0px 5px #006eff;
+    margin-bottom: 2em;
+}
+.cardnews h3{
+    padding: 0.6em 0.7em;
+}
+.cardnews p{
+    padding: 0em 1em;
+}
+.next-games h2{
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.1875em;
+}
+.next-games-bg{
+    width:100% ;
+    height: 800px;
+    background: var(--gradient);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2.4em 0;
+}
+.next-games-match{
+   width: 100%; 
+   height: 6.25em;
+   display: flex;
+   flex-direction: column; 
+   align-items: center;
+   font-weight: 700;
+   color: white;
+}
+.teams{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.next-games-match div{
+    display: flex;
+    align-items: center;
+}
+.next-games-match img{
+    max-width: 2.8em;
+}
+.next-games-match > p{
+    margin-bottom: 1em ;
+}
 
 /* até 1199 */
 @media screen and (max-width: 74.93em){
@@ -184,9 +303,7 @@ body{
 
 /* até 767 */
 @media screen and (max-width: 47.93em){
-    #menu-bars{
-    display: block;
-    }
+  
 }
 
 /* até 576 */
