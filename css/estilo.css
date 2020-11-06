@@ -67,7 +67,7 @@ body{
     text-shadow: 0 0 var(--red);
     text-decoration: underline;
 }
-#menu-bars{
+.menubotao{
     color: white;
     display: none;
 }
@@ -77,7 +77,6 @@ body{
 }
 .banner img{
     width: 100%;
-    max-width: 75em;
 }
 .banner-container{
     width: 100%;
@@ -369,6 +368,9 @@ color: white;
     .banner-text p{
         font-size: 1.5em;
     }
+    .banner img{
+        max-width: 74,9375em;
+    }
     .text-about{
         font-size: 0.8em;
     }
@@ -380,12 +382,6 @@ color: white;
     }
     .next-games-bg{
         margin-bottom: 7em;
-    }
-    .cardnews:nth-child(5){
-        display:  none;
-    }
-    .cardnews:nth-child(6){
-        display:  none;
     }
     .sociais > h2{
         font-size: 0.8em;
@@ -404,12 +400,89 @@ color: white;
 
 /* 768 até 991 */
 @media screen and (max-width: 61.93em){
-
+    .header-top img{
+        max-width: 15.18em;
+    }
+    .menu{
+        max-width: 37.5em;
+    }
+    .banner-text{
+        height: 88%;
+        margin-top: -1em;
+    }
+    .banner-text h1{
+        font-size: 3.62em;
+    }
+    .banner-text p{
+        font-size: 1.3em;
+    }
+    .banner-text a{
+        margin-top: 2em;
+        font-size: 1.5em;
+    }
+    .games img{
+        width: 130px;
+    }
+    .content-about img{
+        max-width: 22.875em;
+    }
+    .text-about{
+        margin-top: 5em;
+    }
+    .games  .games-aovivo img{
+        width: 50px;
+    }
+    .games .games-embreve {
+        font-size: 1.25em;
+    }
+    .games .games-embreve img{
+        width: 40px;
+    }
+    .games .games-aovivo h2{
+        font-size: 20px;
+    }
+    .games .games-embreve h2{
+        font-size: 20px;
+    }
+    .bg-news .content-news .cardnews:nth-child(5){
+        display: none;
+    }
+    .bg-news .content-news .cardnews:nth-child(6){
+        display: none;
+    }
+    .next-games .next-games-match:nth-child(5){
+        display: none;
+    }
+    .next-games .next-games-match:nth-child(6){
+        display: none;
+    }
+    .flex-1{
+        flex-wrap: wrap;
+    }
+    .bg-news .news{
+        margin: auto;
+    }
+    .bg-news h2{
+        margin: auto;
+    }
+    .bg-news .next-games h2{
+        margin-left: 1.9em;
+    }
+    .next-games-bg{
+        flex-wrap: wrap;
+        /* padding: -0.6em 0; */
+        margin-bottom: 0em;
+        margin-left: 4em;
+        flex-direction: unset;
+    }
+    
 }
 
 /* 576 até 767 */
 @media screen and (max-width: 47.93em){
-  
+    .menubotao{
+        display: inline;
+    }
 }
 
 /* até 575 */
