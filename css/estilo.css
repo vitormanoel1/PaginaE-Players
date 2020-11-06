@@ -22,16 +22,18 @@ body{
 }
 
 .header-top{
-    width: 100%;
+    width: 95%;
+    max-width: 75em;
+    margin: auto;
     height: 5em;
     /* background: royalblue; */
 }
 .header-top img{
-    width: 100%;
+    width: 95%;
     max-width: 21.18em;
 }
 .content{
-    width: 100%;
+    width: 95%;
     max-width: 75em;
     height: 100%;
     margin: auto;
@@ -49,7 +51,7 @@ body{
 }
 .menu{
     width: 100%;
-    max-width: 40em;
+    max-width: 37.5em;
 }
 .menu ul{
     list-style-type: none;
@@ -71,11 +73,11 @@ body{
 }
 /* fim do menu  */
 .banner{
-    position: relative;
+    display: flex;
 }
 .banner img{
     width: 100%;
-    max-width: 120em;
+    max-width: 75em;
 }
 .banner-container{
     width: 100%;
@@ -85,7 +87,7 @@ body{
     top: 0;
 }
 .banner-content{
-    width: 75em;
+    width: 100%;
     height: 100%;
     /* background-color: rgba(255, 255, 255, 0.521);  */
     margin: auto;
@@ -94,7 +96,8 @@ body{
 }
 .banner-text{
     width: 50%;
-    height: 100%;
+    height: 88%;
+    margin-top: 5em;
     /* background-color: orchid; */
     display: flex;
     flex-direction: column;
@@ -122,85 +125,94 @@ body{
 .games{
     width: 100%;
     height: 7.5em;
-    /* background-color: yellow;  */
+    /* background-color: yellow; */
 }
 .games ul{
     width: 100%;
-    /* background-color: var(--blue);  */
+    /* background-color: red; */
     list-style-type: none;
 }
 .games img{
-    width: 10,625em;
+    width: 170px;
+  
 }
 .games ul a:hover img{
     transition: 0.5s;
-    transform: scale(1.5);
+    transform:scale(1.5);
 }
-.about{
+
+.about {
     height: 31.25em;
     background-color: var(--blue);
+
     position: relative;
 }
-.about-angulation{
+
+.about-angulation {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
 }
-.angulation{
-    height: 25.125em;
+
+.angulation {
+    height: 24.125em;
     width: 100%;
     background-color: var(--black);
 
-    transform: skewY(-4deg);
+    transform: skewY(-4deg);   
 }
-.container-about{
+
+.container-about {
     color: white;
     position: absolute;
-    top: 0;
+    top: 0
 }
-.content-about{
-    width: 80%;
-    max-width: 75em;
+
+.content-about {
+    width: 95%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.text-about{
+
+.text-about {
     width: 50%;
     text-align: justify;
 }
-.text-about h2{
-    margin-bottom: 0.5em;
+
+.text-about h2 {
+    margin-bottom: 1em;
     font-size: 2.1875em;
 }
-.text-about p{
-    font-size: 1.10em;
+
+.text-about p {
+    font-size: 1.25em;
 }
-.content-about img{
+
+.content-about img {
     max-width: 31.875em;
 }
-/* fim dos games  */
 .linha{
-    border: solid 1px #ffffff;
+    border:solid 1px #fff;
     height: 3em;
-    margin-right: 2em;
 }
 .games-aovivo, .games-embreve{
-width: 100%;
-display: flex;
-color: white;
-align-items: center;
-justify-content: space-between;
-font-size:1.5625em;
+    display: flex;
+    color:#fff;
+    align-items: center;
+    font-size: 1.5625em;/*30px*/
+    justify-content: space-between;
+
 }
 .partida{
-width: 9.5em;
-display: flex;
-align-items: center;
-justify-content: space-between;
-margin: auto;
+    /* width: 9.5em; */
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    justify-content: space-between;
+    margin-left: 1em;
 }
 .time1, .time2{
     display: flex;
@@ -209,10 +221,10 @@ margin: auto;
 .partida img{
     width: 1.8em;
 }
-.time1{
+.time1 img{
     margin-left: 0.5em;
 }
-.time2{
+.time2 img{
     margin-right: 0.5em;
 }
 /* fim dos games  */
@@ -259,7 +271,7 @@ margin: auto;
 }
 .next-games-bg{
     width:100% ;
-    height: 800px;
+    height: auto;
     background: var(--gradient);
     display: flex;
     flex-direction: column;
@@ -341,22 +353,66 @@ color: white;
     margin-top: 0.8em;
 }
 
-/* até 1199 */
+/* 992 até 1199 */
 @media screen and (max-width: 74.93em){
-    
+    .header-top{
+        width: 95%;
+        max-width: 74.93em;
+        font-size: 0.8em;
+    }
+    .banner-text{
+        margin-top: 1em;
+    }
+    .banner-text h1{
+        font-size: 4.62em;
+    }
+    .banner-text p{
+        font-size: 1.5em;
+    }
+    .text-about{
+        font-size: 0.8em;
+    }
+    .content-news{
+        justify-content: space-around;
+    }
+    .news h2{
+        margin-left: 1.3em;
+    }
+    .next-games-bg{
+        margin-bottom: 7em;
+    }
+    .cardnews:nth-child(5){
+        display:  none;
+    }
+    .cardnews:nth-child(6){
+        display:  none;
+    }
+    .sociais > h2{
+        font-size: 0.8em;
+    }
+    .sociais input[type="email"]{
+        width: 11.1875em;
+    }
+    .sociais input[type="submit"]{
+        width: 8.75em;
+    }
+    .logo-rodapé {
+        width: 16.06em;
+    }
+
 }
 
-/* até 991 */
+/* 768 até 991 */
 @media screen and (max-width: 61.93em){
 
 }
 
-/* até 767 */
+/* 576 até 767 */
 @media screen and (max-width: 47.93em){
   
 }
 
-/* até 576 */
+/* até 575 */
 @media screen and (max-width: 36em){
 
 }
