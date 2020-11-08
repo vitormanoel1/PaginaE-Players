@@ -213,11 +213,22 @@ body{
     justify-content: space-between;
     margin-left: 1em;
 }
+.partidas{
+    /* width: 9.5em; */
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    justify-content: space-between;
+    margin-left: 1em; 
+}
 .time1, .time2{
     display: flex;
     align-items: center;
 }
 .partida img{
+    width: 1.8em;
+}
+.partidas img{
     width: 1.8em;
 }
 .time1 img{
@@ -314,6 +325,13 @@ body{
     color: white;
     text-decoration: none;
 }
+.links-2{
+    color: white;
+}
+.links-2 a{
+    color: white;
+    text-decoration: none;
+}
 .rodapé{
     padding: 1em 0;
 }
@@ -400,6 +418,9 @@ color: white;
 
 /* 768 até 991 */
 @media screen and (max-width: 61.93em){
+    .header-top .content .flex-1{
+        flex-wrap: nowrap;
+    }
     .header-top img{
         max-width: 15.18em;
     }
@@ -475,13 +496,114 @@ color: white;
         margin-left: 4em;
         flex-direction: unset;
     }
-    
+    .links-footer{
+        width: 25%;
+    }
+    .sociais > h2{
+        font-size: 0.75em;
+        margin-bottom: 0.8em;
+    }
+    .links-2{
+        display: none;
+    }
+    .sociais form{
+        display: flex;
+    }
+    .sociais input[type="email"]{
+        width: 9.825em;
+        height: 1.875em;
+    }
+    .sociais input[type="submit"]{
+        width: 8em;
+        height: 1.482em;
+        font-size: 1.1em;
+    }
+    .sociais{
+        margin: auto;
+    }
+    .siga-nos{
+        font-size: 0.9375em;
+    }
+    .siga-nos img{
+        width: 2.5em;
+        height: 2.5em;
+    }
+    .logo-rodapé {
+        width: 12.06em;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 /* 576 até 767 */
 @media screen and (max-width: 47.93em){
-    .menubotao{
-        display: inline;
+    .header-top img {
+        width: 10.18em;
+        margin: auto;
+    }
+    .btnmenu{
+        display: none;
+        color: white;
+    }
+    .menu{
+        width: 75%;
+    }
+    .banner-text h1{
+        font-size: 1.62em;
+    }
+    .banner-text p{
+        font-size: 1em;
+    }
+    .banner-text a{
+        margin-bottom: 7em;
+        font-size: 1em;
+    }
+    .games ul li:nth-child(2){
+        display: none;
+    }
+    .games ul li:nth-child(5){
+        display: none;
+    }
+    
+    .text-about h2{
+        font-size: 1.5em;
+    }
+    .text-about p{
+        font-size: 1em;
+    }
+    .about .container-about img{
+        max-width: 18.875em;
+    }
+    .games-embreve .partida:nth-child(2){
+        display: none;
+    }
+    .bg-news .content-news .cardnews:nth-child(3){
+        display: none;
+    }
+    .bg-news .content-news .cardnews:nth-child(4){
+        display: none;
+    }
+    .content-news{
+        flex-wrap: nowrap;
+    }
+    .cardnews{
+        margin-right: 0.5em;
+    }
+    .next-games-bg{
+        margin: auto;
+    }
+    .meus-links{
+        width: 100%;
+    }
+    .links-footer{
+        width: 35%;
+        margin-bottom: -5em;
+    }
+    .logo-rodapé{
+        margin: auto;
+    }
+    .sociais{
+        margin-left: 15em;
     }
 }
 
