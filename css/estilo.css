@@ -609,5 +609,75 @@ color: white;
 
 /* até 575 */
 @media screen and (max-width: 36em){
-
+    .header-top img {
+        width: 10.18em;
+        margin: auto;
+    }
+    .btnmenu{
+        display: none;
+        color: white;
+    }
+    .menu ul{
+        width: 75%;
+        font-size:9px ;
+    }
+    .banner-text h1{
+        font-size: 1em;
+    }
+    .banner-text p{
+        font-size: 0.5em;
+    }
+    .banner-text a{
+        margin-bottom: 25em;
+        font-size: 0.5em;
+    }
+    .games ul li:nth-child(4){
+        display: none;
+    }
+    
+    .text-about h2{
+        font-size: 1em;
+    }
+    .text-about p{
+        font-size: 0.9em;
+    }
+    .about .container-about img{
+        max-width: 9.875em;
+        height: 16em;
+    }
+    .games{
+        height: 12em;
+    }
+    .flex-2{
+        flex-direction: column;
+    }
+    .linha{
+        display: none;
+    }
+    .bg-news .content-news .cardnews:nth-child(3){
+        display: none;
+    }
+    .bg-news .content-news .cardnews:nth-child(4){
+        display: none;
+    }
+    .bg-news h2{
+        font-size: 1.5em;
+    }
+    .bg-news .next-games h2{
+        margin-left: 0.9em;
+        font-size: 1.5em;
+    }
+    .content-news{
+        flex-wrap: wrap;
+    }
+    .links-footer{
+        width: 50%;
+        margin-bottom: 2em;
+    }
+    .logo-rodapé{
+        margin-left: -1em;
+    }
+    .sociais{
+        margin: auto;
+    }
 }
